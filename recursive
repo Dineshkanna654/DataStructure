@@ -1,0 +1,42 @@
+
+factorial(n)
+
+factorial(5) = 120 
+
+Understanding the Recursive Function
+Base Case (n == 0 or n == 1)
+When n reaches 0 or 1, the recursion stops and returns 1.
+This is necessary to prevent infinite recursion.
+
+Recursive Case (n > 1)
+The function calls itself with the argument n-1, effectively reducing the problem size by one.
+
+Step 1: 
+    factorial(5) = 5 * factorial(4)
+
+Step 2:
+    factorial(4) = 4 * factorial(3)
+
+Step 3:
+    factorial(3) = 3 * factorial(2)
+
+Step 4:
+    factorial(2) = 2 * factorial(1)
+
+Step 5:
+    factorial(1) = 1
+
+Step 6:
+    factorial(2) = 2 * 1 = 2
+
+Step 7:
+    factorial(3) = 3 * 2 = 6
+
+Step 8:
+    factorial(4) = 4 * 6 = 24
+
+Step 9: 
+    factorial(5) = 5 * 24 = 120
+
+The recursion stops when n reaches 1, and the final result is 120.
+
