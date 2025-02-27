@@ -1,3 +1,9 @@
+"""
+Write a Python function to find the Max of three numbers.
+Example:
+Input: [3, 6, -5]
+Output: 6
+"""
 num = [1,3,4,3,25]
 
 def max_num(num):
