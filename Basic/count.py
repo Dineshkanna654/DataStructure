@@ -1,8 +1,9 @@
 """
 This is a simple program to count the number of characters in a string.
 """
-text = "dineshkanna"
-for char in text:
-    if char == text:
-        print(text)
-        print(char)
+txt = 'dineshkanna'
+count = 0
+for i in txt:
+    count = count + 1
+    
+print(count)
