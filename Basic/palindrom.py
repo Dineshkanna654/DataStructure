@@ -7,3 +7,5 @@ def palin(n: int):
             print(i)
 palin(1000)
 
+
+
