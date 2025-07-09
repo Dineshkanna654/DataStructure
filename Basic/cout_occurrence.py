@@ -8,4 +8,24 @@ def count_occurrence(text: str):
     return {letter: text.count(letter) for letter in text}
 
 a = count_occurrence('hello!!')
-print(a)    
+print(a)
+
+# method 2
+
+def count2(text: str):
+	cleaned_text = text.replace(" ", "").lower()
+	output = {}
+	for letter in cleaned_text:
+		if letter.isalpha():
+			output[letter] = cleaned_text.count(letter)
+	return output
+
+print(count2('Dinesh kanna!'))
+
+# method 3 This avoids using .count() (which scans the string every time).
+def count2(text: str):
+    output = {}
+    for char in text.lower():
+        if char.isalpha():
+            output[char] = output.get(char, 0) + 1
+    return output
