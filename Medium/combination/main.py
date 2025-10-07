@@ -30,3 +30,7 @@ def fun2(a):
 	return max_sum_pair
 
 print(fun2([1, 5, 7, 9, 2, 8]))
+
+# Generate 3-element combinations manually
+# Input: [1, 2, 3, 4]
+# ➤ Output: (1,2,3), (1,2,4),
