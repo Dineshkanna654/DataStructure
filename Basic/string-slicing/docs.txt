@@ -1,0 +1,6 @@
+s = "learning"
+
+print(s[:4])   # First 4 letters
+print(s[2:6])  # From index 2 to 5
+print(s[-3:])  # Last 3 letters
+print(s[::-1]) # Reverse string
