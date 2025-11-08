@@ -40,4 +40,25 @@ def Q2(url, postId):
 			postIdOne.append(comment)
 	return postIdOne[:5]
 
-print(Q2('https://jsonplaceholder.typicode.com/comments', postId=1))
+# print(Q2('https://jsonplaceholder.typicode.com/comments', postId=1))
+
+'''
+3. Handle JSON to Dictionary
+
+Get data from: https://jsonplaceholder.typicode.com/users/1
+
+Extract and print:
+
+Name
+
+Email
+
+City (address.city)'''
+
+def Q3(url):
+	res = requests.get(url=url).json()
+	print("Name: ", res["name"])
+	print("Email: ", res["email"])
+	print("City: ", res["address"]["city"])
+Q3('https://jsonplaceholder.typicode.com/users/1')
+
